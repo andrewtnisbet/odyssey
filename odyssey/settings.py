@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'odyssey.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'odyssey_dev',
+        'USER': 'odyssey_user',
+        'PASSWORD': 'homer',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
